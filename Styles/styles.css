@@ -316,6 +316,11 @@ button:hover {
   transition: 0.3s ease-in-out;
 }
 
+.canvas-1 {
+  background: black;
+  position: relative;
+}
+
 section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -391,15 +396,43 @@ span {
   color: var(--light);
 }
 
-#section-a .container {
-  -ms-grid-row: 4;
-  -ms-grid-row-span: 3;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 5;
-  grid-area: 4 / 2 / 7 / 7;
+@media screen and (min-width: 1024px) {
+  #section-a .container {
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 5;
+    grid-area: 4 / 2 / 7 / 7;
+  }
+  #section-a canvas {
+    position: absolute;
+    border: 1px solid white;
+    height: 90vh;
+    width: 50%;
+    right: 140px;
+    top: 40px;
+  }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  #section-a .container {
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 8;
+    grid-area: 4 / 2 / 7 / 10;
+  }
+  #section-a canvas {
+    position: absolute;
+    border: 1px solid white;
+    height: 70vh;
+    width: 70%;
+    right: 5%;
+    top: 5%;
+  }
+}
+
+@media screen and (max-width: 767px) {
   .progressSection {
     right: 5%;
     bottom: 5%;
@@ -431,6 +464,14 @@ span {
     -ms-grid-column: 1;
     -ms-grid-column-span: 8;
     grid-area: 6 / 1 / 9 / 9;
+  }
+  #section-a canvas {
+    position: absolute;
+    border: 1px solid white;
+    height: 50vh;
+    width: 90vw;
+    right: 5%;
+    top: 15%;
   }
 }
 /*# sourceMappingURL=styles.css.map */

@@ -312,6 +312,13 @@ button:hover {
     transition: 0.3s ease-in-out;
 }
 
+// ------------------------------ Canvas ------------------------------
+
+.canvas-1 {
+    background: black;
+    position: relative;
+}
+
 // ------------------------------ Sections ------------------------------
 
 section {
@@ -372,7 +379,6 @@ span {
     background-position: left;
     background-repeat: no-repeat;
     background-size: auto;
-
     height: 90vh;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -383,15 +389,45 @@ span {
     h1 {
         color: var(--light);
     }
-
-    .container {
-        grid-area: 4 / 2 / 7 / 7;
-    }
 }
 
 // ------------------------------ @media ------------------------------
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 1024px) {
+    #section-a {
+        .container {
+            grid-area: 4 / 2 / 7 / 7;
+        }
+
+        canvas {
+            position: absolute;
+            border: 1px solid white;
+            height: 90vh;
+            width: 50%;
+            right: 140px;
+            top: 40px;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    #section-a {
+        .container {
+            grid-area: 4 / 2 / 7 / 10;
+        }
+
+        canvas {
+            position: absolute;
+            border: 1px solid white;
+            height: 70vh;
+            width: 70%;
+            right: 5%;
+            top: 5%;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
     .progressSection {
         right: 5%;
         bottom: 5%;
@@ -422,6 +458,15 @@ span {
 
         .container {
             grid-area: 6 / 1 / 9 / 9;
+        }
+
+        canvas {
+            position: absolute;
+            border: 1px solid white;
+            height: 50vh;
+            width: 90vw;
+            right: 5%;
+            top: 15%;
         }
     }
 }
