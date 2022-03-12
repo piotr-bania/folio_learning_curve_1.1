@@ -152,7 +152,7 @@ button:hover {
 .progressSection {
     position: fixed;
     right: 140px;
-    bottom: 40px;
+    bottom: 5%;
     width: 1px;
     height: 150px;
     display: flex;
@@ -220,31 +220,19 @@ button:hover {
 
 .logo {
     position: fixed;
-    width: 70px;
-    height: 70px;
-    left: 140px;
-    top: 5%;
     z-index: 100;
 }
 
 .open-menu {
     position: fixed;
-    right: 140px;
     top: 5%;
-    width: 60px;
-    height: 60px;
-    padding: 7px;
     cursor: pointer;
     z-index: 98;
 }
 
 .closed-menu {
     position: fixed;
-    right: 140px;
     top: 5%;
-    width: 60px;
-    height: 60px;
-    padding: 7px;
     cursor: pointer;
     z-index: 98;
 }
@@ -315,7 +303,7 @@ button:hover {
 // ------------------------------ Canvas ------------------------------
 
 .canvas-1 {
-    background: black;
+    background: rgba(0, 0, 0, 0.5);
     position: relative;
 }
 
@@ -394,6 +382,19 @@ span {
 // ------------------------------ @media ------------------------------
 
 @media screen and (min-width: 1024px) {
+    .logo {
+        width: 70px;
+        height: 70px;
+        left: 140px;
+    }
+
+    .open-menu, .closed-menu {
+        right: 140px;
+        width: 70px;
+        height: 70px;
+        padding: 7px;
+    }
+
     #section-a {
         .container {
             grid-area: 4 / 2 / 7 / 7;
@@ -401,16 +402,29 @@ span {
 
         canvas {
             position: absolute;
-            border: 1px solid white;
             height: 90vh;
             width: 50%;
             right: 140px;
-            top: 40px;
+            top: 5%;
         }
     }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+    .logo {
+        width: 60px;
+        height: 60px;
+        left: 5%;
+        top: 5%;
+    }
+
+    .open-menu, .closed-menu {
+        right: 5%;
+        width: 60px;
+        height: 60px;
+        padding: 6px;
+    }
+
     #section-a {
         .container {
             grid-area: 4 / 2 / 7 / 10;
@@ -418,7 +432,6 @@ span {
 
         canvas {
             position: absolute;
-            border: 1px solid white;
             height: 70vh;
             width: 70%;
             right: 5%;
@@ -428,14 +441,23 @@ span {
 }
 
 @media screen and (max-width: 767px) {
+    .logo {
+        width: 50px;
+        height: 50px;
+        left: 5%;
+        top: 5%;
+    }
+
+    .open-menu, .closed-menu {
+        right: 5%;
+        width: 50px;
+        height: 50px;
+        padding: 5px;
+    }
+
     .progressSection {
         right: 5%;
         bottom: 5%;
-    }
-
-    .logo {
-        left: 5%;
-        top: 5%;
     }
 
     .open-menu {
@@ -462,7 +484,6 @@ span {
 
         canvas {
             position: absolute;
-            border: 1px solid white;
             height: 50vh;
             width: 90vw;
             right: 5%;
