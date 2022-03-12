@@ -147,7 +147,6 @@ button:hover {
 
 .progressSection {
   position: fixed;
-  right: 140px;
   bottom: 5%;
   width: 1px;
   height: 150px;
@@ -396,6 +395,9 @@ span {
     height: 70px;
     padding: 7px;
   }
+  .progressSection {
+    right: 140px;
+  }
   #section-a .container {
     -ms-grid-row: 4;
     -ms-grid-row-span: 3;
@@ -424,6 +426,9 @@ span {
     width: 60px;
     height: 60px;
     padding: 6px;
+  }
+  .progressSection {
+    right: 5%;
   }
   #section-a .container {
     -ms-grid-row: 4;
