@@ -1,0 +1,23 @@
+{
+  "name": "portfolio-website",
+  "version": "1.0.0",
+  "description": "This is my personal portfolio website.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/piotr-bania/Portfolio-Website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/piotr-bania/Portfolio-Website/issues"
+  },
+  "homepage": "https://github.com/piotr-bania/Portfolio-Website#readme",
+  "dependencies": {
+    "gsap": "^3.9.1",
+    "three": "^0.138.3"
+  }
+}
