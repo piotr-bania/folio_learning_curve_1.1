@@ -10,4 +10,5 @@ hamburgerMenu.addEventListener('click', () => {
 closeNavContent.addEventListener('click', () => {
     navContent.classList.remove('show')
     document.body.style.overflow="auto"
+    document.body.style.overflowX = 'hidden';
 })

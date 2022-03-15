@@ -80,6 +80,7 @@ body {
     line-height: 1.5;
     color: var(--light);
     user-select: none;
+    overflow-x: hidden;
 }
 
 // ------------------------------ Fonts ------------------------------
@@ -302,8 +303,10 @@ button:hover {
 // ------------------------------ Canvas ------------------------------
 
 .canvas-1 {
-    background: rgba(0, 0, 0, 0.5);
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
+    outline: none;
 }
 
 // ------------------------------ Sections ------------------------------
@@ -403,8 +406,7 @@ span {
             grid-area: 4 / 2 / 7 / 9;
         }
 
-        canvas {
-            position: absolute;
+        .canvas-1 {
             height: 90vh;
             width: 50%;
             right: 140px;
@@ -437,7 +439,7 @@ span {
             grid-area: 4 / 2 / 7 / 9;
         }
 
-        canvas {
+        .canvas-1 {
             position: absolute;
             height: 70vh;
             width: 70%;
@@ -489,7 +491,7 @@ span {
             grid-area: 6 / 1 / 9 / 9;
         }
 
-        canvas {
+        .canvas-1 {
             position: absolute;
             height: 50vh;
             width: 90vw;

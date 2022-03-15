@@ -75,6 +75,7 @@ body {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -304,8 +305,10 @@ button:hover {
 }
 
 .canvas-1 {
-  background: rgba(0, 0, 0, 0.5);
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
+  outline: none;
 }
 
 section {
@@ -405,8 +408,7 @@ span {
     -ms-grid-column-span: 7;
     grid-area: 4 / 2 / 7 / 9;
   }
-  #section-a canvas {
-    position: absolute;
+  #section-a .canvas-1 {
     height: 90vh;
     width: 50%;
     right: 140px;
@@ -437,7 +439,7 @@ span {
     -ms-grid-column-span: 7;
     grid-area: 4 / 2 / 7 / 9;
   }
-  #section-a canvas {
+  #section-a .canvas-1 {
     position: absolute;
     height: 70vh;
     width: 70%;
@@ -487,7 +489,7 @@ span {
     -ms-grid-column-span: 8;
     grid-area: 6 / 1 / 9 / 9;
   }
-  #section-a canvas {
+  #section-a .canvas-1 {
     position: absolute;
     height: 50vh;
     width: 90vw;
